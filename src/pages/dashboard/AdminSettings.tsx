@@ -686,13 +686,14 @@ const AdminSettings = () => {
       <p className="text-muted-foreground mb-6">Manage your salon configuration</p>
 
       <Tabs defaultValue="business" className="space-y-6">
-        <TabsList className="glass-subtle rounded-xl h-auto p-1.5">
+        <TabsList className="glass-subtle rounded-xl h-auto p-1.5 flex flex-wrap justify-start">
           <TabsTrigger value="business">Business</TabsTrigger>
           <TabsTrigger value="team">Team</TabsTrigger>
           <TabsTrigger value="programs">Programs</TabsTrigger>
           <TabsTrigger value="notifications">Notifications</TabsTrigger>
           <TabsTrigger value="integrations">Integrations</TabsTrigger>
           <TabsTrigger value="appearance">Appearance</TabsTrigger>
+          <TabsTrigger value="hairstyles">Hairstyles</TabsTrigger>
           {demoModeEnabled && <TabsTrigger value="demo">Demo Data</TabsTrigger>}
         </TabsList>
 
@@ -1229,7 +1230,7 @@ const AdminSettings = () => {
           </div>
         </TabsContent>
 
-        {/* ── Appearance (Branding + Styles) ── */}
+        {/* ── Appearance (Branding) ── */}
         <TabsContent value="appearance">
           <div className="space-y-8">
             <BrandingSettings
@@ -1237,6 +1238,12 @@ const AdminSettings = () => {
               salon={salon}
               onSalonUpdate={(updates: any) => setSalon({ ...salon, ...updates })}
             />
+          </div>
+        </TabsContent>
+
+        {/* ── Hairstyles ── */}
+        <TabsContent value="hairstyles">
+          <div className="space-y-8">
           <Card className="glass rounded-xl border-0">
             <CardHeader className="p-6">
               <div className="flex items-center justify-between">
