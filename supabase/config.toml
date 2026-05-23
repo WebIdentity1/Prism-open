@@ -1,0 +1,132 @@
+project_id = "prism-salon-os"
+
+[api]
+enabled = true
+port = 54341
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54342
+shadow_port = 54340
+major_version = 17
+
+[db.seed]
+enabled = false
+sql_paths = []
+
+[studio]
+enabled = true
+port = 54343
+api_url = "http://127.0.0.1"
+
+[inbucket]
+enabled = true
+port = 54344
+
+[edge_runtime]
+enabled = true
+inspector_port = 54345
+deno_version = 2
+
+[analytics]
+enabled = true
+port = 54347
+backend = "postgres"
+
+[functions.detect-face-shape]
+verify_jwt = false
+
+[functions.generate-tryon]
+verify_jwt = false
+
+[functions.seed-demo-users]
+verify_jwt = false
+
+[functions.invite-stylist]
+verify_jwt = false
+
+[functions.send-appointment-email]
+verify_jwt = false
+
+[functions.appointment-reminders]
+verify_jwt = false
+
+[functions.send-message]
+verify_jwt = false
+
+[functions.calendar-feed]
+verify_jwt = false
+
+[functions.create-checkout]
+verify_jwt = false
+
+[functions.customer-portal]
+verify_jwt = false
+
+[functions.charge-customer]
+verify_jwt = false
+
+[functions.import-csv]
+verify_jwt = false
+
+[functions.create-connect-account]
+verify_jwt = false
+
+[functions.connect-account-status]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.send-client-onboarding-sms]
+verify_jwt = false
+
+[functions.client-onboarding]
+verify_jwt = false
+
+[functions.google-reserve-feed]
+verify_jwt = false
+
+[functions.track-meta-event]
+verify_jwt = false
+
+[functions.send-payment-link]
+verify_jwt = false
+
+[functions.generate-email]
+verify_jwt = false
+
+[functions.google-bp-auth]
+verify_jwt = false
+
+[functions.google-bp-sync]
+verify_jwt = false
+
+[functions.generate-style-image]
+verify_jwt = false
+
+[functions.preview-voice]
+verify_jwt = false
+
+[functions.seed-demo-data]
+verify_jwt = false
+
+[functions.ai-assistant]
+verify_jwt = false
+
+[functions.setup-voice-agent]
+verify_jwt = false
+
+[functions.voice-agent-webhook]
+verify_jwt = false
+
+[functions.voice-agent-tools]
+verify_jwt = false
+
+[functions.cleanup-stale-appointments]
+verify_jwt = false
+
+[functions.lookup-client-email]
+verify_jwt = false

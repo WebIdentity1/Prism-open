@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 37 18% 96%;
+    --foreground: 258 22% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 258 22% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 258 22% 12%;
+
+    --primary: 252 100% 69%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 33 34% 64%;
+    --secondary-foreground: 258 22% 12%;
+
+    --muted: 35 18% 92%;
+    --muted-foreground: 258 15% 45%;
+
+    --accent: 180 58% 53%;
+    --accent-foreground: 258 22% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 258 10% 90%;
+    --input: 258 10% 90%;
+    --ring: 252 100% 69%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 37 18% 96%;
+    --sidebar-foreground: 258 15% 30%;
+    --sidebar-primary: 252 100% 69%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 252 60% 95%;
+    --sidebar-accent-foreground: 252 80% 55%;
+    --sidebar-border: 258 10% 90%;
+    --sidebar-ring: 252 100% 69%;
+
+    /* Prism design tokens — single-tier glass */
+    --glass-bg: rgba(255, 255, 255, 0.55);
+    --glass-bg-elevated: rgba(255, 255, 255, 0.72);
+    --glass-bg-subtle: rgba(255, 255, 255, 0.35);
+    --glass-border: rgba(26, 22, 37, 0.06);
+    --glass-border-elevated: rgba(26, 22, 37, 0.10);
+    --glass-blur: 12px;
+
+    --champagne: #C4A882;
+    --champagne-light: #E8D5BC;
+    --champagne-dark: #A08660;
+    --prism: #7B61FF;
+    --prism-light: #A78BFA;
+    --glass-teal: #3ECFCF;
+    --glass-teal-light: #6EE7E7;
+    --rose: #E8A0BF;
+    --rose-light: #F5D0E0;
+    --obsidian: #1A1625;
+    --obsidian-light: #2A2436;
+    --obsidian-mid: #3D3550;
+    --pearl: #F8F6F3;
+    --pearl-warm: #F0ECE6;
+
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+  }
+
+  .dark {
+    --background: 258 22% 12%;
+    --foreground: 37 18% 96%;
+
+    --card: 262 20% 18%;
+    --card-foreground: 37 18% 96%;
+
+    --popover: 262 20% 18%;
+    --popover-foreground: 37 18% 96%;
+
+    --primary: 252 100% 69%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 33 34% 64%;
+    --secondary-foreground: 258 22% 12%;
+
+    --muted: 260 18% 22%;
+    --muted-foreground: 258 12% 60%;
+
+    --accent: 180 50% 20%;
+    --accent-foreground: 180 58% 70%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 37 18% 96%;
+
+    --border: 260 15% 20%;
+    --input: 260 15% 20%;
+    --ring: 252 100% 69%;
+
+    --sidebar-background: 260 22% 10%;
+    --sidebar-foreground: 37 15% 85%;
+    --sidebar-primary: 252 100% 69%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 252 40% 18%;
+    --sidebar-accent-foreground: 252 80% 75%;
+    --sidebar-border: 260 15% 20%;
+    --sidebar-ring: 252 100% 69%;
+
+    /* Prism dark glass tokens — single-tier glass */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg-elevated: rgba(255, 255, 255, 0.08);
+    --glass-bg-subtle: rgba(255, 255, 255, 0.02);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border-elevated: rgba(255, 255, 255, 0.12);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* ── Prism Glass Utilities ── */
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+  }
+
+  .glass-elevated {
+    background: var(--glass-bg-elevated);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border-elevated);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  .dark .glass-elevated {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-subtle {
+    background: var(--glass-bg-subtle);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+  }
+
+  /* Brand text — solid color, no gradient */
+  .text-gradient-brand {
+    color: var(--champagne);
+  }
+
+  .light .text-gradient-brand,
+  :root:not(.dark) .text-gradient-brand {
+    color: var(--obsidian);
+  }
+
+  /* AI indicator pulse */
+  .ai-pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--prism);
+    animation: ai-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes ai-pulse {
+    0%, 100% {
+      opacity: 1;
+      box-shadow: 0 0 0 0 rgba(123, 97, 255, 0.4);
+    }
+    50% {
+      opacity: 0.7;
+      box-shadow: 0 0 0 6px rgba(123, 97, 255, 0);
+    }
+  }
+
+  /* AI badge */
+  .ai-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    background: linear-gradient(135deg, rgba(123, 97, 255, 0.12), rgba(62, 207, 207, 0.08));
+    border: 1px solid rgba(123, 97, 255, 0.2);
+    color: var(--prism-light);
+  }
+
+  /* Prism gradient backgrounds for buttons */
+  .bg-gradient-prism {
+    background: linear-gradient(135deg, var(--prism), var(--prism-light));
+  }
+
+  .bg-gradient-champagne {
+    background: linear-gradient(135deg, var(--champagne), var(--champagne-light));
+  }
+
+  .bg-gradient-teal {
+    background: linear-gradient(135deg, var(--glass-teal), var(--glass-teal-light));
+  }
+
+  .bg-gradient-rose {
+    background: linear-gradient(135deg, var(--rose), var(--rose-light));
+  }
+
+  /* Badge color variants */
+  .badge-prism {
+    background: rgba(123, 97, 255, 0.15);
+    color: var(--prism-light);
+    border: 1px solid rgba(123, 97, 255, 0.2);
+  }
+
+  .badge-teal {
+    background: rgba(62, 207, 207, 0.12);
+    color: var(--glass-teal-light);
+    border: 1px solid rgba(62, 207, 207, 0.2);
+  }
+
+  .badge-champagne {
+    background: rgba(196, 168, 130, 0.15);
+    color: var(--champagne-light);
+    border: 1px solid rgba(196, 168, 130, 0.2);
+  }
+
+  .badge-rose {
+    background: rgba(232, 160, 191, 0.12);
+    color: var(--rose-light);
+    border: 1px solid rgba(232, 160, 191, 0.2);
+  }
+
+  .badge-glass {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(248, 246, 243, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Ambient glow backgrounds */
+  .glow-prism {
+    position: relative;
+  }
+
+  .glow-prism::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(ellipse, rgba(123, 97, 255, 0.12) 0%, rgba(62, 207, 207, 0.06) 40%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Smooth ease-out transition utility */
+  .transition-spring {
+    transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  /* ── Voice Demo Orb ── */
+  .voice-ring {
+    animation: voice-ring-expand 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .voice-ring-delay-1 { animation-delay: 0.6s; }
+  .voice-ring-delay-2 { animation-delay: 1.2s; }
+
+  @keyframes voice-ring-expand {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .voice-orb-idle {
+    animation: voice-orb-breathe 3s ease-in-out infinite;
+  }
+
+  @keyframes voice-orb-breathe {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(123, 97, 255, 0.2);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(123, 97, 255, 0.35);
+      transform: scale(1.03);
+    }
+  }
+
+  .voice-orb-speaking {
+    animation: voice-orb-speak 1s ease-in-out infinite;
+  }
+
+  @keyframes voice-orb-speak {
+    0%, 100% {
+      box-shadow: 0 0 25px rgba(62, 207, 207, 0.3);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 45px rgba(62, 207, 207, 0.5);
+      transform: scale(1.06);
+    }
+  }
+}
+
+/* ── Bloom reveal animation (for AI try-on) ── */
+@keyframes bloom {
+  0% {
+    opacity: 0;
+    filter: blur(20px) brightness(1.5);
+    transform: scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(4px) brightness(1.1);
+    transform: scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0) brightness(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes spring-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(8px);
+  }
+  60% {
+    transform: scale(1.02) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Dashboard page-load stagger ── */
+.animate-in {
+  animation: fade-up 0.4s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+
+.stagger-1 { animation-delay: 0ms; }
+.stagger-2 { animation-delay: 60ms; }
+.stagger-3 { animation-delay: 120ms; }
+.stagger-4 { animation-delay: 180ms; }
+.stagger-5 { animation-delay: 240ms; }
+.stagger-6 { animation-delay: 300ms; }
+
+/* ── Sidebar collapsible content ── */
+[data-state="open"] > .collapsible-content {
+  animation: collapsible-open 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+[data-state="closed"] > .collapsible-content {
+  animation: collapsible-close 0.15s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes collapsible-open {
+  0% { opacity: 0; transform: translateY(-4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes collapsible-close {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-4px); }
+}
+
+/* ── Notification bell nudge ── */
+@keyframes bell-nudge {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(8deg); }
+  40% { transform: rotate(-6deg); }
+  60% { transform: rotate(4deg); }
+  80% { transform: rotate(-2deg); }
+}
+
+.animate-bell-nudge {
+  animation: bell-nudge 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ── Reduced motion: respect user preference ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,15 @@
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Classic Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'A-Line Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Inverted Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'French Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Textured Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Choppy Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Lob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Asymmetrical Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Stacked Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Shaggy Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Micro Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Italian Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Glass Hair Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Long Pixie';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Textured Pixie';

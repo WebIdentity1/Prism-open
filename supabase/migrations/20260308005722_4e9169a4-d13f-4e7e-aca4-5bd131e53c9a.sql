@@ -1,0 +1,17 @@
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Natural Afro' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Passion Twists' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Rachel Cut' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Razor Cut Layers' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Senegalese Twists' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Side Shave' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Sleek Straight' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Slicked Back' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Soft Curls' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Space Buns' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Tapered Afro' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Top Knot' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Twist Out' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'U-Cut' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Undercut' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'V-Cut' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Wet Look' AND gender = 'female';

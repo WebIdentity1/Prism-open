@@ -1,0 +1,1 @@
+ALTER TABLE public.salons ADD COLUMN payment_collection_mode text NOT NULL DEFAULT 'none';

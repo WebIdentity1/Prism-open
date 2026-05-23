@@ -1,0 +1,1 @@
+ALTER TABLE public.stylist_profiles ADD COLUMN calendar_feed_token uuid DEFAULT gen_random_uuid();

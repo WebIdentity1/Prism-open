@@ -1,0 +1,45 @@
+{
+  "description": "Women's hair try-on evaluation corpus. Populate images/ and references/ with consented, licensed photos whose filenames match the cases below. Files in images/ and references/ are gitignored; only this manifest is committed.",
+  "cases": [
+    {
+      "id": "long-straight-01",
+      "category": "long-straight",
+      "source": "images/long-straight-01-source.png",
+      "reference": "references/long-straight-01-ref.png",
+      "styleName": "Layered Long",
+      "styleDescription": "Long hair with soft layers framing the face"
+    },
+    {
+      "id": "long-wavy-01",
+      "category": "long-wavy",
+      "source": "images/long-wavy-01-source.png",
+      "reference": "references/long-wavy-01-ref.png",
+      "styleName": "Beach Waves",
+      "styleDescription": "Loose tousled waves falling past the shoulders"
+    },
+    {
+      "id": "curly-01",
+      "category": "curly",
+      "source": "images/curly-01-source.png",
+      "reference": "references/curly-01-ref.png",
+      "styleName": "Defined Curls",
+      "styleDescription": "Springy defined curls with volume at the crown"
+    },
+    {
+      "id": "coily-01",
+      "category": "coily",
+      "source": "images/coily-01-source.png",
+      "reference": "references/coily-01-ref.png",
+      "styleName": "Natural Afro",
+      "styleDescription": "Tight coils styled in a rounded afro silhouette"
+    },
+    {
+      "id": "cross-straight-to-curly-01",
+      "category": "cross-texture",
+      "source": "images/long-straight-01-source.png",
+      "reference": "references/curly-01-ref.png",
+      "styleName": "Defined Curls",
+      "styleDescription": "Springy defined curls (applied to a straight-haired subject)"
+    }
+  ]
+}

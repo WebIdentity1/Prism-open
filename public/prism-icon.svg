@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="prism-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7B61FF"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle subtly stretched along 45-degree diagonal -->
+  <ellipse cx="256" cy="256" rx="200" ry="179" fill="url(#prism-grad)" transform="rotate(45 256 256)"/>
+  <!-- Inner glass circle -->
+  <circle cx="256" cy="256" r="51" fill="white" fill-opacity="0.3"/>
+</svg>

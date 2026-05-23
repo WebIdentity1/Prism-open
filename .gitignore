@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+tmp/
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vercel
+.claude/
+.env*.local
+.env.*
+!.env.example
+.superpowers/
+.env
+*.lockb
+StyleSync_Hairstyle_Guide.pdf
+Prism_Hairstyle_Guide.pdf
+PROOF_OF_SMS_CONSENT.*
+
+# AI try-on evaluation harness
+evals/out/*
+!evals/out/.gitkeep
+evals/women-hair/images/
+evals/women-hair/references/

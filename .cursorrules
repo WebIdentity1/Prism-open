@@ -1,0 +1,39 @@
+# Prism Salon OS
+
+Prism is an open-source, self-hosted salon operating system built with Vite, React, TypeScript, Tailwind, shadcn/Radix components, Supabase, and Supabase Edge Functions.
+
+## Current Architecture
+
+- Supported frontend entrypoint: `src/`
+- Routing: React Router
+- Backend: Supabase Auth, Postgres, Storage, RLS, and Edge Functions under `supabase/functions/`
+- Browser-safe env vars use `VITE_` prefixes.
+- Server-side provider secrets belong in Supabase Edge Function secrets, not frontend env.
+- Tests use Vitest and jsdom.
+- The package manager for this repo is npm; use `package-lock.json`.
+
+## Setup Commands
+
+```sh
+npm install
+cp .env.example .env
+npm run setup:doctor
+npm run dev
+```
+
+Before publishing a change:
+
+```sh
+npm run lint
+npm run test
+npm run build
+```
+
+## Agent Rules
+
+- Start with `README.md`, `docs/SELF_HOSTING.md`, and `docs/AI_AGENT_SETUP.md`.
+- Never commit `.env`, `.env.local`, `.vercel`, provider keys, service-role keys, OAuth client secrets, or webhook secrets.
+- Keep self-hosting paths bring-your-own-credentials and provider-optional.
+- Do not reintroduce closed SaaS assumptions, paid-only flows, or hardcoded Prism-hosted infrastructure.
+- Add tests when changing setup checks, secret inventory, prompt builders, schema helpers, or provider-selection logic.
+- Keep demo login and demo seeding disabled by default in production guidance.

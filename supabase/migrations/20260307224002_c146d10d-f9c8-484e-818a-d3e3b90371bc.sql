@@ -1,0 +1,16 @@
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Classic Fade';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Modern Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Box Braids';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Pixie Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Layered Lob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Beach Waves';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Undercut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Pompadour';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Buzz Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Curtain Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'French Crop';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Textured Crop';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Blunt Bob';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Shag Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Side Part';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Slick Back';

@@ -1,0 +1,16 @@
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Crew Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Skin Fade';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Taper Fade';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Drop Fade';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Disconnected Undercut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Hard Part';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Modern Pompadour';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Quiff';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Textured Quiff';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Comb Over';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Comb Over Fade';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Faux Hawk';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Mohawk';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Bro Flow';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Middle Part';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Messy Fringe';

@@ -1,0 +1,15 @@
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Faux Locs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Feathered Layers';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Feed-In Braids';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Flat Twists';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'French Twist';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Fulani Braids';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Goddess Braids';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Hollywood Waves';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Knotless Braids';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Loose Waves';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Low Bun';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Mermaid Waves';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Messy Bun';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Mixie';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Modern Mullet' AND gender = 'female';

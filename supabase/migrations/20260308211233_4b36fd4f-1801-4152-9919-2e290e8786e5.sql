@@ -1,0 +1,1 @@
+ALTER TABLE public.salons ADD COLUMN require_booking_forms boolean NOT NULL DEFAULT false;

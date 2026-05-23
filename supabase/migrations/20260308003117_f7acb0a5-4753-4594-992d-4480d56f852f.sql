@@ -1,0 +1,15 @@
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Bantu Knots' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Bardot Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Birkin Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Blowout' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Blunt Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Box Braids' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Buzz Cut' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Claw Clip Updo';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Collarbone Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Cornrows' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Curtain Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Curtain Layers';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Defined Curls';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Face-Framing Layers';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Farrah Fawcett Flip';

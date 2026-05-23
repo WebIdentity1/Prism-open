@@ -1,0 +1,15 @@
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Asymmetrical Pixie';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Bixie';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Blunt Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Bottleneck Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Butterfly Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Curtain Bangs' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Hime Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Jellyfish Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Modern Shag' AND gender = 'female';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Octopus Cut';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Pixie with Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Shag';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Side-Swept Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Wispy Bangs';
+UPDATE style_gallery SET image_url = '/placeholder.svg' WHERE name = 'Wolf Cut' AND gender = 'female';
